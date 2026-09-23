@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jersey City Buy Here Pay Here | On-Site Financing, No Bank Loans</title>
+<meta name="description" content="Jersey City Buy Here Pay Here — instant car approval, in-house financing, all credit accepted. Drive today from our Jersey City, NJ dealership.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#12203A;
+    --steel:#1F3A5F;
+    --amber:#F2A93B;
+    --cream:#F7F5EF;
+    --ink:#20242B;
+    --line:#E1DCCF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.55;
+  }
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;color:var(--navy);line-height:1.15;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+  /* Header */
+  header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20;}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 24px;max-width:1120px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand img{height:46px;width:46px;object-fit:contain;border-radius:8px;background:#fff;padding:3px;}
+  .brand-name{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem;color:#fff;}
+  nav{display:flex;align-items:center;gap:26px;}
+  nav a{font-size:0.92rem;color:#D8DEEA;text-decoration:none;}
+  nav a:hover{color:#fff;}
+  .phone-link{font-weight:600;color:#fff;text-decoration:none;font-size:0.92rem;}
+  .cta-btn{
+    background:var(--amber);color:var(--navy);font-weight:600;
+    padding:10px 20px;border-radius:6px;text-decoration:none;font-size:0.92rem;
+    white-space:nowrap;
+  }
+  @media (max-width:820px){
+    nav a.nav-link{display:none;}
+  }
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,var(--navy),var(--steel));color:#fff;}
+  .hero-inner{max-width:1120px;margin:0 auto;padding:64px 24px 70px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;}
+  .hero h1{font-size:clamp(2.1rem,4.5vw,3.1rem);color:#fff;margin-bottom:18px;}
+  .hero p{color:#D8DEEA;font-size:1.08rem;max-width:46ch;margin-bottom:28px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{background:var(--amber);color:var(--navy);font-weight:600;padding:14px 26px;border-radius:6px;text-decoration:none;font-size:1rem;}
+  .btn-outline{border:1.5px solid rgba(255,255,255,0.55);color:#fff;padding:13px 24px;border-radius:6px;text-decoration:none;font-weight:500;font-size:1rem;}
+  .hero-img{border-radius:12px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,0.35);}
+  .hero-img img{width:100%;height:340px;object-fit:cover;}
+  @media (max-width:820px){
+    .hero-inner{grid-template-columns:1fr;padding-top:44px;}
+    .hero-img{order:-1;}
+    .hero-img img{height:220px;}
+  }
+
+  section{padding:70px 0;}
+  .eyebrow-free h2{font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:10px;}
+  .section-lead{color:#565B63;max-width:60ch;margin-bottom:38px;font-size:1.02rem;}
+
+  /* Services */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .service-card{
+    background:#fff;border:1px solid var(--line);border-radius:10px;
+    padding:26px 24px;
+  }
+  .service-card h3{font-size:1.08rem;margin-bottom:8px;}
+  .service-card p{font-size:0.94rem;color:#4B505A;}
+  @media (max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:600px){.services-grid{grid-template-columns:1fr;}}
+
+  /* Why choose */
+  .why{background:var(--navy);color:#fff;}
+  .why-inner{display:grid;grid-template-columns:0.9fr 1.1fr;gap:48px;align-items:center;}
+  .why-img{border-radius:12px;overflow:hidden;}
+  .why-img img{width:100%;height:320px;object-fit:cover;}
+  .why h2{color:#fff;}
+  .why .section-lead{color:#C9D0DD;}
+  .why-list{list-style:none;display:flex;flex-direction:column;gap:16px;margin-top:8px;}
+  .why-list li{display:flex;gap:14px;font-size:0.98rem;color:#E4E8F0;}
+  .why-list li .mark{color:var(--amber);font-weight:700;flex-shrink:0;}
+  @media (max-width:820px){.why-inner{grid-template-columns:1fr;}.why-img{order:-1;}.why-img img{height:220px;}}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid var(--line);padding:18px 0;}
+  .faq-item summary{
+    cursor:pointer;font-family:'Space Grotesk',sans-serif;font-weight:600;
+    font-size:1.02rem;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:16px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";font-size:1.3rem;color:var(--amber);}
+  .faq-item[open] summary::after{content:"–";}
+  .faq-item p{margin-top:12px;color:#4B505A;font-size:0.96rem;max-width:70ch;}
+
+  /* Contact */
+  .contact{background:#fff;border-top:1px solid var(--line);}
+  .contact-inner{display:grid;grid-template-columns:1fr 1.15fr;gap:44px;align-items:start;}
+  .contact-card h2{margin-bottom:18px;}
+  .contact-row{display:flex;gap:14px;margin-bottom:16px;font-size:0.98rem;}
+  .contact-row .label{font-weight:600;color:var(--navy);min-width:88px;flex-shrink:0;}
+  .contact-row a{color:var(--steel);text-decoration:none;}
+  .contact-row a:hover{text-decoration:underline;}
+  .map-frame{border-radius:10px;overflow:hidden;border:1px solid var(--line);}
+  .map-frame iframe{width:100%;height:340px;border:0;display:block;}
+  @media (max-width:820px){.contact-inner{grid-template-columns:1fr;}}
+
+  footer{background:var(--navy);color:#B9C0CF;padding:30px 24px;font-size:0.86rem;text-align:center;}
+  footer a{color:#B9C0CF;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <img src="https://s.floomby.com/uploads/s/230926/U9fyYQcs.jpg?download=1&name=Screenshot-23-09-2026%2007:00:59.jpg" alt="Jersey City Buy Here Pay Here logo">
+      <span class="brand-name">Jersey City Buy Here Pay Here</span>
+    </div>
+    <nav>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#why">Why Us</a>
+      <a class="nav-link" href="#faq">FAQ</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="phone-link" href="tel:2012344880">201-234-4880</a>
+      <a class="cta-btn" href="#contact">Drive Today</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Bad Credit? No Bank Loans? Drive Today.</h1>
+      <p>Jersey City Buy Here Pay Here is a family-owned BHPH dealership offering on-site, in-house financing — no bank required. Instant approval, flexible payments, and quality used cars for all credit backgrounds.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="tel:2012344880">Call 201-234-4880</a>
+        <a class="btn-outline" href="https://www.ogmpayhere.com/" target="_blank" rel="noopener">Visit Our Website</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://img.magnific.com/premium-photo/generative-ai-hands-car-driver-steering-wheel_101296-1266.jpg?w=2000" alt="Driver behind the wheel of a car">
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap eyebrow-free">
+    <h2>Our Services</h2>
+    <p class="section-lead">As a full in-house BHPH dealership, we handle financing, approval, and the paperwork under one roof, right here in Jersey City, NJ.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>On-Site, In-House Financing</h3>
+        <p>Skip the bank entirely. Every loan is approved and serviced directly here at our dealership, so you're never waiting on outside lenders.</p>
+      </div>
+      <div class="service-card">
+        <h3>Instant &amp; Same-Day Approval</h3>
+        <p>Our quick approval process means most buyers walk in and drive out the same day, with financing decisions made on the spot.</p>
+      </div>
+      <div class="service-card">
+        <h3>All Credit Accepted</h3>
+        <p>Bad credit, no credit, or a recent bankruptcy — we work with your real situation and offer guaranteed financing options, not empty promises.</p>
+      </div>
+      <div class="service-card">
+        <h3>Credit Rebuilding Support</h3>
+        <p>On-time payments with us are reported to help you rebuild your credit history, so this loan works for your future, not just today.</p>
+      </div>
+      <div class="service-card">
+        <h3>Flexible Payment Plans</h3>
+        <p>Payment schedules are built around how you actually get paid, keeping your car loan affordable and manageable month to month.</p>
+      </div>
+      <div class="service-card">
+        <h3>Quality Used Cars, Dealer Warranty</h3>
+        <p>Every vehicle on our lot is inspected before sale and backed by a dealer warranty, so affordable doesn't mean unreliable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap why-inner">
+    <div class="why-img">
+      <img src="https://img.magnific.com/premium-photo/3d-illustration-steering-wheel-driver-prestige-modern-car-isolated-white-background_1255023-63389.jpg?w=2000" alt="Steering wheel of a modern car">
+    </div>
+    <div>
+      <h2>Why Choose Jersey City Buy Here Pay Here?</h2>
+      <p class="section-lead">We're a local, family-run dealership that's built our reputation on getting Jersey City drivers approved — not turning them away.</p>
+      <ul class="why-list">
+        <li><span class="mark">✓</span> Family-owned dealership serving Jersey City and the surrounding NJ area.</li>
+        <li><span class="mark">✓</span> No bank loans needed — approval and financing happen directly with us.</li>
+        <li><span class="mark">✓</span> Guaranteed financing options for buyers other dealers turn away.</li>
+        <li><span class="mark">✓</span> Spanish-speaking staff on hand to walk you through every step.</li>
+        <li><span class="mark">✓</span> A reputation for quality, affordable cars — not just low prices on paper.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap eyebrow-free">
+    <h2>Frequently Asked Questions</h2>
+    <p class="section-lead">Answers to what most buyers ask before visiting our Jersey City lot.</p>
+
+    <details class="faq-item" open>
+      <summary>What is Buy Here Pay Here financing and how does it work?</summary>
+      <p>Buy Here Pay Here means the dealership finances your car directly, instead of sending you to a bank or outside lender. You choose your car, get approved on-site, and make your payments right here — which is why approval is faster and less dependent on a perfect credit score.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I get approved with bad credit or no credit history?</summary>
+      <p>Yes. Our in-house financing was built for exactly this situation. We look at your ability to make payments today, not just a credit score, so bad credit, thin credit files, and past repossessions don't automatically disqualify you.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What do I need to bring to drive today?</summary>
+      <p>Generally you'll need a valid driver's license, proof of income, and proof of residence. Bring these with you and our team can usually complete approval and paperwork the same visit, so you can drive today.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Do you accept trade-ins or require a down payment?</summary>
+      <p>We accept trade-ins toward your purchase, and down payment requirements are set to stay flexible and affordable based on the vehicle and your situation — ask our team for exact terms on the car you're interested in.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is there a Spanish-speaking representative available?</summary>
+      <p>Yes, we have Spanish-speaking staff available to help explain financing terms, walk through paperwork, and answer questions in Spanish throughout the buying process.</p>
+    </details>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div class="contact-card">
+      <h2>Contact Information</h2>
+      <div class="contact-row">
+        <span class="label">Dealership</span>
+        <span>Jersey City Buy Here Pay Here</span>
+      </div>
+      <div class="contact-row">
+        <span class="label">Address</span>
+        <span>525 Washington Blvd #305<br>Jersey City, NJ 07310</span>
+      </div>
+      <div class="contact-row">
+        <span class="label">Phone</span>
+        <a href="tel:2012344880">201-234-4880</a>
+      </div>
+      <div class="contact-row">
+        <span class="label">Website</span>
+        <a href="https://www.ogmpayhere.com/" target="_blank" rel="noopener">ogmpayhere.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="label">Find Us</span>
+        <a href="https://www.google.com/maps?cid=6255544782195344714" target="_blank" rel="noopener">View on Google Maps</a>
+      </div>
+      <a class="btn-primary" style="margin-top:10px;display:inline-block;" href="tel:2012344880">Call Now — Drive Today</a>
+    </div>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.5884136500067!2d-74.0357296!3d40.7270763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c257d54079f25b%3A0x56d028d60b4d454a!2sJersey%20City%20Buy%20Here%20Pay%20Here!5e0!3m2!1sen!2s!4v1790161228974!5m2!1sen!2s" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Jersey City Buy Here Pay Here location map"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Jersey City Buy Here Pay Here · 525 Washington Blvd #305, Jersey City, NJ 07310 · <a href="tel:2012344880">201-234-4880</a> · <a href="https://www.ogmpayhere.com/" target="_blank" rel="noopener">ogmpayhere.com</a>
+</footer>
+
+</body>
+</html>
